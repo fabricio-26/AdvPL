@@ -1,15 +1,7 @@
 //Bibliotecas
 #Include "Protheus.ch"
  
-/*/{Protheus.doc} zMiniForm
-Função Mini Fórmulas, para executar fórmulas
-@author Atilio
-@since 17/12/2017
-@version 1.0
-@type function
-@obs Assim como o fórmulas foi bloqueado no Protheus 12, cuidado ao deixar exposto no menu o Mini Fórmulas
-/*/
- 
+
 User Function zMiniForm()
     Local aArea := GetArea()
     //Variáveis da tela
