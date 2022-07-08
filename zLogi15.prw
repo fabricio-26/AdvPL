@@ -5,7 +5,8 @@ User Function zLogi15()
     Local cQrySA2 := ""
     Local nAtual  := 0
 
-    //Selecionando os forncedores via query diretamente no banco de dodos
+    //Selecting providers via query directly in the database
+    //Selecionando os forncedores via query diretamente no banco de dados
     cQrySA2 := " SELECT TOP 100 " + CRLF
     cQrySA2 += "    A2_COD, " + CRLF
     cQrySA2 += "    A2_NOME " + CRLF
@@ -18,9 +19,11 @@ User Function zLogi15()
     cQrySA2 += " ORDER BY " + CRLF
     cQrySA2 += "    A2_COD " + CRLF
 
+    //Executing the query
     //Executando a query
     PLSQuery(cQrySA2, "QRY_SA2")
 
+    //As long as there is query data
     //Enquanto houver dados da query
     while ! QRY_SA2->(Eof())
         nAtual++
@@ -33,6 +36,9 @@ User Function zLogi15()
 
     RestArea(aArea)
 Return
+
+//Source example of how to execute a SQL Query(PLSQuery)
+//Fonte exemplo de como executar uma Query SQL(PLSQuery)
 
 
 
